@@ -12,4 +12,9 @@ phases:
       - npm run build
   post_build:
     commands:
-      - aws s3 sync ./dist s3://test51-bucket
+      - echo POST BUILDING...
+artifacts:
+  files:
+    - 'dist'/**/*'
+    - appspec.yml
+    - scripts/*
