@@ -13,8 +13,9 @@ phases:
   post_build:
     commands:
       - echo POST BUILDING...
+
 artifacts:
   files:
     - 'dist'/**/*'
-    - appspec.yml
-    - scripts/*
+    - 'appspec.yml'
+    - 'scripts/*'
